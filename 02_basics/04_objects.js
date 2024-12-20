@@ -52,3 +52,23 @@ console.log(Object.keys(tinderUser)); // Get keys
 console.log(Object.values(tinderUser)); // Get values
 console.log(Object.entries(tinderUser)); // Get entries
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Check property existence
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Using destructuring
+const course = {
+    coursename: "js in tutorial",
+    price: "654",
+    courseInstructor: "Sandeep"
+};
+
+const { courseInstructor } = course;
+console.log(courseInstructor);
+
+// Properly defining and logging the JSON-like block
+const jsonLikeObject = {
+    name: "Sandeep",
+    coursename: "js in tutorial",
+    price: "free"
+};
+console.log(jsonLikeObject);
